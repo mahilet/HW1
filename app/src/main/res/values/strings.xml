@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">AD340/HW1</string>
+    <string name="Me" translatable="false">Seeking Junior Software Engineer</string>
+    <string name="Name" translatable="false"> Mahilet Hailemariam</string>
+    <string name="MeDetail" translatable="false">I am an experienced software
+        developer and current student at
+        North Seattle College pursuing my Bachelor’s degree in Web Applications.
+        I specialize in SQL development and database administration and
+        I have experience with many different languages, libraries and frameworks
+        for creating web Applications.
+        My previous education and experience is in Engineering,
+        this background has provided me with a foundation in Mathematics
+        and analytics that has proved indispensable during
+        my transition to computer science.</string>
+</resources>
