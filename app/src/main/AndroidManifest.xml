@@ -9,13 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name="com.mahiltletdan.hw1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name="com.mahiltletdan.hw1.detailActivity"
+            android:parentActivityName="com.mahiltletdan.hw1.MainActivity" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mahiltletdan.hw1.MainActivity" />
+
+        </activity>
+
+
+
+        <activity android:name="com.mahiltletdan.hw1.MyMoviesList"
+            android:parentActivityName="com.mahiltletdan.hw1.MainActivity" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mahiltletdan.hw1.MainActivity" />
+        </activity>
+
+
     </application>
 
 </manifest>
