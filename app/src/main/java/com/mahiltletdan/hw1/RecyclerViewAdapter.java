@@ -1,13 +1,10 @@
 package com.mahiltletdan.hw1;
-
 import android.content.Context;
-import android.support.v7.app.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import static android.support.v7.recyclerview.R.styleable.RecyclerView;
 
 
 /**
@@ -37,7 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter
 
         ViewHolder(View v){
 
-            super();
+            super(v);
 
             textView = (TextView)v.findViewById(R.id.subject_textview1);
         }
@@ -45,6 +42,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+
+
 
         view1 = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view, parent, false);
 
