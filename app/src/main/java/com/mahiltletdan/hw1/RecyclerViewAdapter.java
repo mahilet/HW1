@@ -6,7 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.RelativeLayout;
+
+import static android.support.v7.recyclerview.R.styleable.RecyclerView;
 
 
 /**
@@ -45,7 +46,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
 
-        view1 = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view_adapter, parent, false);
+        view1 = LayoutInflater.from(context).inflate(R.layout.activity_recycler_view, parent, false);
 
         viewHolder1 = new ViewHolder(view1);
 

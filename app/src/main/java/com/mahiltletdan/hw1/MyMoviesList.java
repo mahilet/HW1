@@ -2,8 +2,10 @@ package com.mahiltletdan.hw1;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AlertController;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.widget.Adapter;
 import android.widget.RelativeLayout;
@@ -14,7 +16,7 @@ public class MyMoviesList extends AppCompatActivity {
     RecyclerView recyclerView;
     RelativeLayout relativeLayout;
     Adapter recyclerViewAdapter;
-    LayoutManager recylerViewLayoutManager;
+    RecyclerView.LayoutManager recylerViewLayoutManager;
 
     String[] Movie = {
             "Mad Max: Fury Road",  "Action & Adventure", "2015",
@@ -50,19 +52,21 @@ public class MyMoviesList extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
+
         recylerViewLayoutManager = new GridLayoutManager(context, 2);
 
-        recyclerView.setLayoutManager(recylerViewLayoutManager);
+        //recyclerView.setLayoutManager(recylerViewLayoutManager);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//or any layout manager (grid etc)
 
-        recyclerViewAdapter = new RecyclerViewAdapter(context,Movie);
 
-        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerViewAdapter = (Adapter) new RecyclerViewAdapter(context,Movie);
+
+        recyclerView.setAdapter((RecyclerView.Adapter) recyclerViewAdapter);
 
 
 
     }
 
 
-    private class RecyclerView {
     }
-}
