@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayou xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/subject_textview1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="165dp"
+        android:layout_height="345dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="left"
-        android:ellipsize="end" />
-</LinearLayou>
+        android:layout_marginLeft="30dp"
+
+        android:ellipsize="end"
+        tools:ignore="InefficientWeight,ObsoleteLayoutParam,RtlHardcoded,Suspicious0dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="50dp" />
+</LinearLayout>
 
 
